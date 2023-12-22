@@ -9,3 +9,4 @@ class ProjectViewSet(viewsets.ModelViewset):
 class BlogViewSet(viewsets.ModelViewSet):
     queryset = Blog.objects.all().order_by("-posted_on")
     serializer_class = BlogSerializer
+    
